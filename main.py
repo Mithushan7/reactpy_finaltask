@@ -83,7 +83,7 @@ app = FastAPI()
 
 #copy and pasting the MongoDb URI
 uri = "mongodb+srv://admin:123@cluster0.d2nrwcm.mongodb.net/"
-client = MongoClient(uri)
+client = MongoClient(uri, Server_api=ServerApi("1"))
 
 #defining the database name and collection
 db = client["Reactpy_Task01"]
